@@ -1,38 +1,259 @@
-.App {
+@font-face {
+  font-family: "CircularSp";
+  src: url("/public/Fonts/Circular/CircularStd-Medium.otf");
+}
+.sidebar {
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  background-color: black;
+  padding: 10px;
+  width:22.5%
+}
+.sidebar>ul {
+  color:#FFF;
+  font-size: 1.25rem;
+  list-style: none;
+}
+.sidebar>ul>li {
+  margin: 5px;
+  margin-bottom: 10px;
+}
+.sidebar--logo>img {
+  width: 80px;
+}
+.sidebar--logo {
+  color: #FFF;
+  display: flex;
+  margin-bottom: 80px;
+  margin-top: 20px;
+}
+
+.header {
+  font-family: "CircularSp",sans-serif;
+  display: flex;
+  background-color: #101111;
+  color: #FFF;
+  padding: 15px;
+
+}
+.login--header--button {
+  width:125px;
+  background-color: #FFF;
+  color: #101111;
+  border-radius: 40px;
+  height: 60px;
+  border: none;
+  font-size: 1.25rem;
+  margin-right: 20px;
+}
+.signup--header-button {
+  width:125px;
+  color: #FFF;
+  border-radius: 40px;
+  background-color: #101111;
+  height: 60px;
+  border: none;
+  font-size: 1.25rem;
+}
+button {
+  border-radius: 20px;
+}
+.signup--page--logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+}
+
+.signup--page--logo>h1 {
+  position: relative;
+  top:5px;
+  margin-left: 10px;
+}
+.signup--page--logo>img{
+  width:60px;
+}
+.logo {
+  font-family: "CircularSp";
+  /* font-weight: 800; */
+}
+.header>button {
+  margin-top: 10px;
+}
+.headerBtns {
+  margin-left: auto;
+  margin-right: 20px;
+}
+.footer {
+  background-image: linear-gradient(to right,#AE3C98,#5298F2);
+  width: 100%;
+  color: #FFF;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  padding: 10px;
+  padding-top: 15px;
+  z-index: 2;
+}
+.footer--signup {
+  margin-left: auto;
+}
+
+.spotify--logo {
+  /* font-family: "CircularSp"; */
+  display: flex;
   text-align: center;
 }
+.signup--page {
+  /* font-family: "CircularSp"; */
+  text-align: center;
+  /* display: flex;
+  flex-direction: column; */
+}
+.signup--buttons {
+  margin-bottom: 20px;
+  /* width:75%; */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+}
+.signup--buttons>div>button{
+  width:500px;
+  height: 45px;
+  border-radius: 20px;
+  border: none;
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+}
+.facebook--signup {
+  background-color: #405A93;
+  color: #FFF;
+}
+.google--signup {
+  border: 1px solid gray;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.signup--page>form {
+  text-align: left;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.signup--page>h2 {
+  margin-bottom: 30px;
+  font-weight: 800;
+}
+.signup--page>div>h5 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+form {
+  font-weight: 600;
+  /* text-align: left; */
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
-
-.App-link {
-  color: #61dafb;
+form>div>label {
+  text-align: left;
+  margin-left: 30px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+form>div {
+  width:50%;
+  text-align: left;
+  position: relative;
+  left:45px;
+}
+form>div>input {
+  margin:20px;
+  padding: 20px;
+  height:40px;
+  width:400px;
+  border-radius: 10px;
+  
+}
+#DOB {
+  margin-bottom: 40px;
+}
+form>button {
+  background-color: #74E167;
+  color:black;
+  width:150px;
+  height:70px;
+  border-radius: 30px;
+  border: none;
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+form>p>span,p>span {
+  color:#74E167;
+  text-decoration: underline;
+}
+p {
+  font-weight: 600;
+}
+.loginpage {
+  text-align: center;
+}
+.login--form{
+  margin-top: 40px;
+}
+hr {
+  margin: 40px;
+}
+.login-buttons {
+  width:475px;
+  border-radius: 20px;
+  border:none;
+  height: 45px;
+  margin: 5px;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.login--footer-button {
+  width:500px;
+  height: 40px;
+  border-radius: 10px;
+  border:2px solid gray;
+  margin-top: 20px;
+  font-size: 1.25rem;
+  background-color: #FFF;
+}
+.facebook {
+  background-color: #405A93;
+  color: #FFF;
+}
+.apple {
+  background-color: black;
+  color: #FFF;
+}
+.google,.phoneNumber {
+  background-color: #FFF;
+  border: 1px solid gray;
+  color: gray;
+}
+.phoneNumber{
+  margin-bottom: 40px;
+}
+.signup--email>p>a:visited{
+  color: #74E167;
+}
+.footer--signup--button {
+  background-color: #FFF;
+  font-size: 1.15rem;
+  font-weight: 600;
+  width:175px;
+  height:45px;
+  border-radius: 40px;
+  border: none;
+}
+.playlist--card {
+  width: 100px;
+  background-color: #282828;
+  color: #FFF;
+}
+.playlist--card>p {
+  color:gray;
 }

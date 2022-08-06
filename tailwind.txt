@@ -1,0 +1,28 @@
+Background Classes
+
+.bg-{color}-{shade}
+For black,white no shadeOthers have 9 shades 100-900 (like font weight)
+
+
+element sizing:rem 
+1 rem:document base(16px)
+2 rem=2*document base(32 px)
+No decimals in tailwind e.g 1.25 not allowed
+1rem in tailwind=4
+i.e a width of 1 rem is .w-4
+or .h-4
+.w-1/2 means 50%
+.w-screen entire screen, .w-full entire conatiner
+
+Padding,margin
+.{p|m}-{size}
+size same as above
+
+Styling text
+.font-{family} family:sans,serif,mono
+.text-{size}  size:xs(0.75rem), sm(0.875rem), base(1rem),lg(1.125), xl(1.25),2xl,...
+.text-{color}-{shade}
+.italic or .not-italic
+.font-{weight} 100 to 900 or bold,etc
+letter spacing: .tracking-{spacing} measuerd in em not rem (em depends on parents size)
+line height: .leading-{spacing}
